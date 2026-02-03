@@ -225,6 +225,18 @@ Nav {
 }
 
 @media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    gap: auto;
+  }
   Nav {
     display: flex;
     flex-direction: column;
@@ -252,71 +264,65 @@ Nav {
   }
 
   .bloc_1 .group_1 {
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
   }
 
   .bloc_1 .group_1 .title {
     width: 100%;
+    height: auto;
   }
 
-  .bloc_1 .group_1 .title h2 {
-    font-size: 36px;
-  }
-
-  .bloc_1 .group_1 .title p {
-    font-size: 16px;
-  }
-
-  .bloc_1 .group_1 .title .button {
-    width: 120px;
-    height: 48px;
-    font-size: 14px;
-  }
-
-  .bloc_1 .group_1 .picture {
-    width: 280px;
+  .bloc_1 .group_1 .title {
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .button {
+      width: 120px;
+      height: 48px;
+      font-size: 14px;
+    }
+    .picture {
+      width: 280px;
+    }
   }
 
   .bloc_2 {
     margin-top: 50px;
     margin-bottom: 50px;
     gap: 20px;
-  }
-
-  .bloc_2 h3 {
-    font-size: 28px;
-    padding: 0 20px;
-  }
-
-  .bloc_2 p {
-    font-size: 16px;
-    padding: 0 20px;
-  }
-
-  .bloc_2 .clients_tags {
-    gap: 15px;
-  }
-
-  .bloc_2 .clients_tags div {
-    width: 70px;
-    height: 40px;
-  }
-
-  .bloc_2 .clients_tags div img {
-    max-width: 60px;
-    max-height: 35px;
-  }
-
-  .bloc_2 .cards {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .bloc_2 .cards .card {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    min-height: 260px;
+    h3 {
+      font-size: 28px;
+      padding: 0 20px;
+    }
+    p {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+    .clients_tags {
+      gap: 15px;
+    }
+    .clients_tags div {
+      width: 70px;
+      height: 40px;
+    }
+    .clients_tags div img {
+      max-width: 60px;
+      max-height: 35px;
+    }
+    .cards {
+      flex-direction: column;
+      gap: 20px;
+      .card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        min-height: 260px;
+      }
+    }
   }
 }
