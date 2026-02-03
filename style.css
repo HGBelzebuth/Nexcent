@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+element {
+  --primary-color: #4caf4f;
+  --header-bg-color: #f5f7fa;
+}
+
+.scale {
+  transition: transform 300ms;
+}
+
+.scale:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 700px;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+Nav {
+  width: 1152px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 182px;
+  }
+  a {
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #4caf4f;
+  }
+  .connexion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 182 px;
+    height: 40 px;
+  }
+  .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77px;
+    height: 40px;
+    color: #4caf4f;
+  }
+  .login:hover {
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .inscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77px;
+    height: 40px;
+    border-radius: 6px;
+    color: white;
+    background-color: #4caf4f;
+  }
+}
+
+.bloc_1 {
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .group_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      width: 761px;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-size: 76px;
+      }
+      .titre {
+        color: #4d4d4d;
+      }
+      .sous_titre {
+        color: #4caf4f;
+      }
+      p {
+        margin-top: 16px;
+        margin-bottom: 32px;
+        font-size: 20px;
+      }
+      .button {
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 128px;
+        height: 52px;
+        background-color: #4caf4f;
+        color: white;
+      }
+    }
+    .picture {
+      width: 391px;
+      height: 407px;
+    }
+  }
+  .swap {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    width: 46px;
+    height: 10px;
+    div {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #4caf4fa2;
+    }
+    div:hover {
+      background-color: #4caf4f;
+    }
+  }
+}
+
+.bloc_2 {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  h3 {
+    font-size: 44px;
+    color: #4d4d4d;
+  }
+  p {
+    font-size: 20px;
+    color: #717171;
+  }
+  .clients_tags {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 45px;
+      border-radius: 10px;
+    }
+  }
+
+  .clients_tags div:hover {
+    background-color: #4caf4f88;
+  }
+
+  .cards {
+    height: 280px;
+    width: 1440px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    .card {
+      padding: 24px 32px 24px 32px;
+      width: 300px;
+      height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px #b7b7b78b;
+      border: solid 1px #d1d1d1a5;
+
+      .pins {
+        width: 50px;
+        height: 50px;
+        background-color: #e8f5e9;
+        border-radius: 10px 8px 20px 8px;
+        position: absolute;
+      }
+      img {
+        position: relative;
+        top: -5px;
+        left: -20px;
+      }
+      p {
+        text-align: center;
+      }
+      h4 {
+        font-size: 26px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  Nav {
+    display: flex;
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  Nav a {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  Nav .connexion {
+    display: flex;
+    flex-direction: row;
+  }
+
+  Nav .login,
+  Nav .inscription {
+    width: 70px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .bloc_1 .group_1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bloc_1 .group_1 .title {
+    width: 100%;
+  }
+
+  .bloc_1 .group_1 .title h2 {
+    font-size: 36px;
+  }
+
+  .bloc_1 .group_1 .title p {
+    font-size: 16px;
+  }
+
+  .bloc_1 .group_1 .title .button {
+    width: 120px;
+    height: 48px;
+    font-size: 14px;
+  }
+
+  .bloc_1 .group_1 .picture {
+    width: 280px;
+  }
+
+  .bloc_2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+
+  .bloc_2 h3 {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
+  .bloc_2 p {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+
+  .bloc_2 .clients_tags {
+    gap: 15px;
+  }
+
+  .bloc_2 .clients_tags div {
+    width: 70px;
+    height: 40px;
+  }
+
+  .bloc_2 .clients_tags div img {
+    max-width: 60px;
+    max-height: 35px;
+  }
+
+  .bloc_2 .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .bloc_2 .cards .card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 260px;
+  }
+}
